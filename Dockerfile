@@ -9,7 +9,7 @@ RUN tar -xzf cmake-3.17.3.tar.gz
 
 WORKDIR /cmakebuild/cmake-3.17.3
 RUN ./bootstrap
-RUN make -j$(nproc)
+RUN make -j4
 RUN make install
 
 WORKDIR /
